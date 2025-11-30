@@ -1,0 +1,31 @@
+# Ignore all .log files
+*.log
+
+# Ignore all .tmp files
+*.tmp
+
+# Ignore a specific file
+my_secret_file.txt
+
+# Ignore an entire directory (and its contents)
+build/
+node_modules/
+
+# Ignore a specific file within a directory
+config/credentials.json
+
+# Ignore files based on a pattern in any directory
+**/temp_files/
+
+# Exclude a specific file from an ignored directory (negation)
+!build/important_output.txt
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files (e.g., for VS Code)
+.vscode/
+
+# Ignore environment variables files
+.env
