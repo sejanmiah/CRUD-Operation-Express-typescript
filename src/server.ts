@@ -1,6 +1,11 @@
 import express, {Request, Response} from "express";
+import {Pool} from "pg";
 const app = express()
 const port = 5000
+
+const pool = new Pool({
+    connectionString: `${process.env.connection_Str}`
+});
 
 //parser
 app.use(express.json());
